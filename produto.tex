@@ -55,8 +55,14 @@ Aporte de conhecimentos e tecnologias para especificação de vocabulário e fer
 \newcommand{\pp}[1]{
 
 \textbf{Parágrafo #1:}
+}
+\newcommand{\PP}[1]{
+
+\noindent Página #1
 
 }
+\newcommand{\VV}[1]{{\bf \color{red} #1}}
+
 % lista de abreviações
 \makeindex
 
@@ -1329,16 +1335,147 @@ Extendendo classes do core
 \pp{} ok.
 \pp{} ok.
 \pp{} ok.
-\pp{} 
-\pp{} 
-\pp{} 
-\pp{} 
-\pp{} 
-\pp{} 
-\pp{} 
-\pp{} 
-\pp{} 
-\pp{} 
+\chapter{Documento com análise de arquiteturas de sistemas de identidade distribuída, estratégia de implantação considerando os sites parceiros e contendo propostas de códigos}
+\PP{6}
+\section{Apresentação}
+\pp{} ok.
+\pp{} ok.
+\section{SSO - Single Sign-on}
+\subsection{O que é SSO?}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok. \VV{SM pode precisar de administração robusta se for servidor de SSO.}
+\PP{7}
+\subsection{SSO no Noosfero}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\subsection{Qual problema SSO resolve?}
+\pp{} ok.
+\pp{} ok.
+\pp{} \VV{legal do web messaging}. ok.
+\subsection{Como SSO funciona?}
+\pp{} ok.
+\PP{8}
+\pp{} ok.
+Figura 1: ok.
+\subsection{Quais soluções de SSO existem?}
+\pp{} ok.
+\subsubsection{Accounts \& SSO}
+\pp{} ok.
+\PP{9}
+\subsubsection{Central Authentication Service (CAS)}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok
+\pp{} ok.
+\PP{10}
+Figura 2: ok.
+\subsubsection{Distributed Access Control System (DACS)}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\PP{11}
+\pp{} ok.
+\subsubsection{Enterprise Sign On Engine}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\subsubsection{FreeIPA}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\subsubsection{IBM Enterprise Identity Mapping}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\PP{12}
+\subsubsection{JBoss SSO}
+\pp{} \VV{impressão ou algumas das soluções para login unificado também se propõem a integrar logins diferentes, de terceiros, em outros padrões?}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\subsubsection{JOSSO}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\subsubsection{Kerberos}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\PP{13}
+Figura 3: ok.
+\subsubsection{OpenAM}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\subsubsection{Pubcookie}
+\pp{} ok.
+\PP{14}
+Figura: ok.
+\pp{} ok.
+\pp{} ok.
+\subsubsection{SAML}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok
+\PP{15}.
+Figura 5
+\pp{} ok.
+\pp{} ok.
+\subsubsection{Shibboleth}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\PP{16}
+\subsubsection{ZXID}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\section{IdP - Identity Provider}
+\subsection{O que é IdP}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\PP{17}
+\subsection{IdP no Noosfero}
+\pp{} ok.
+\subsection{Qual problema IdP resolve?}
+\pp{} ok.
+\subsection{Quais soluções de IdP existem?}
+\subsubsection{Mozilla Persona}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok. \VV{No caso da participação social, é melhor que toda a atividade seja rastreável, não?}
+\PP{18}
+\subsubsection{OAuth}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\subsubsection{OpenID}
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\pp{} ok.
+\subsubsection{OpenID Connect}
+\pp{} ok.
+\PP{19}
+\pp{} ok.
+\pp{} ok.
+\section{Outras iniciativas}
 \pp{} 
 \pp{} 
 \pp{} 
@@ -1365,6 +1502,11 @@ Extendendo classes do core
 
 \part{Notas aleatórias}
 
+\chapter{Atribuição de papéis}
+Os intermediários podem ser chamados a avaliarem a produção da comunidade, pois não são víscerais como os hubs nem lateral como os periféricos.
+
+Periféricos podem ser chamados para darem substantivos, conceitos, coisas.
+Hubs convocados para qualificar estas coisas. Intermediários para formarem texto(s).
 \chapter{Simulação de processos}
 
 Difusão, contágio, acessibilidade e fofoca nas redes reais do Participa.br e de outras instâncias.
