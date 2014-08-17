@@ -3131,6 +3131,12 @@ para ser incorporado na plataforma utilizada no portal (Noosfero) e, para isso, 
 \part{Notas aleatórias}
 
 \chapter{Criação de aplicativos para as trilhas e o Participa.br em geral}
+Há foco em RC e PLN. Principalmente através de RC, entram todos os dados de contexto (profissão, idade, padrão de uso, etc), pois as redes são grafos com contexto.
+
+Para PLN, pode-se focar em 3 possibilidades: 1) tamanhos de mensagens, frases e palavras; 2) incidência em listas de palavras (ou tokens); e 3) em estruturas sintáticas. Outras possibilidades são: semelhança com algum texto ou a produção do próximo usuário, por critérios semânticos ou bag of words; incidência de classes gramaticais, como plurais, feminino/masculino, voz passiva ou verbo no infinitivo; uso de letras em absoluto ou em posições diferentes.
+
+Para a classificação geral, as entidades são: rede de amizades, rede de interação, indivíduo, postagens, comentários.
+
 De escrita de documentos; de difusão de informação para amadurecimento da causa; de interação entre os participantes.
 
 {\bf Nas comunidades, trilhas, perfis, etc, deixar junto ao contexto um link, redirecionando para uma análise da entidade sendo visitada. Para isso, um plugin do Noosfero pode ser feito, o qual recebe uma URL para a instância do analisador. Este analisador, ao receber a chamada visita, já com o tipo e id da entidade, apresenta uma página com a análise dos dados disponíveis no endpoint Jena. Retorna só o Json processado no server Flask. Retorna Json cru no endpoint com a query.} Talvez liberar também código de integração para usar num iframe dentro do Noosfero.
@@ -3213,6 +3219,42 @@ Big data?
 https://class.coursera.org/datasci-002 (fala de map reduction)
 https://class.coursera.org/bigdata-004/lecture (tb fala de map reduction, linked data e grafos)
 \chapter{Cursos (Coursera)}
+\section{Social Network Analisys}
+\subsection{Week 1 - Intro}
+Sonia software para redes em evolução.
+
+Além das comunidades, achar as componentes conectadas (fortes e fracas e a componente gigante).
+
+Há bons videos mostrando como se usa o Gephi.
+\subsection{Week 2 - Random Graph Models}
+Bons exemplos de percolação.
+\subsection{Week 3 - Centrality}
+Info nova: betweenness é correlacionado com inovação/criatividade do agente, também com a diversidade e qualidade de informação recebida.
+
+Aplicações são interessantes: detectar especialistas, diminuir espalhamento de doenças.
+
+Componentes bowtie: core, in (pode entrar no core, mas não sair) e out (pode sair do core, mas não entrar).
+
+Pagerank não foi ideal para achar especialistas.
+
+Há desvios da lei livre de escala para redes sociais por causa da limitação na quantidade de pessoas que coneguimos interagir/conhecer (o setor de alta conectividade pode ser aproximado por uma exponencial). Por haver uma tendência natural para a lei livre de escala, mas uma limitação da realidade na qual a rede existe, pode ser interessante pensar em formas de expandir essa capacidade comunicativa humana (agrupando pessoas em comunidades, gerando resumos, bots, metaindivíduos, etc).
+\subsection{Week 4 - Community}
+Comunidades são, em geral, reflexo de uma estrutura multimodal (e.g. lugares q a pessoa frequenta ou interesses que possui, os vértices são pessoas e estes lugares/instâncias de contato).
+
+Cliques, K-Core, N-Cliques (closeness), p-cliques (proporção dos vértices).
+
+Limpeza: eliminar arestas não recíprocas ou abaixo de um limiar de peso.
+
+hierarquical clustering para comunidades. Betweenness. Modularidade. Cliques com sobreposição.
+
+Infomap e mapequation para detecção de comunidades e interface online.
+
+Para o usuário: explicitar quais caminhos dele para outras pessoas na comunidade, ou entre 2 pessoas quaisquer (shortest path), tanto no Participa quanto no twitter e no FB. Apontar habilidades (como o linkedin). Apontar atividade de amigos e das pessoas mais distantes da rede. Detecção de usuários que mais usaram palavras específicas (ou expansões feitas com sinônimos ou wordnet).
+\subsection{Week 5 - Small World Networks}
+Calcular, para o usuário, qual a distância máxima para outros vértices, e quem são eles. Assim como alguma divisão dos mais próximos e intermediários.
+
+Calcular o índice de clusterização para o participante, apontando os triângulos formados e os pares separados. Relações embutidas e apontamento das relações potencialmente mais poderosas para difundir informação (relações intermediárias e fracas). Calcular motivos mais e menos incidentes das redes (perfil de motivos) e apontar quais de deles o participante integra.
+
 \section{HCI}
 \subsection{Semana 1 - Intro}
 Interessante principalmente o histórico e testes de eficiência (survey, observação, teste comparativo, etc).
