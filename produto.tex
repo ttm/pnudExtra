@@ -3656,12 +3656,355 @@ Figure 2.1: ok.
 \p ok.
 \subsubsection{Guidelines for Creating Cool URIs}
 \p ok.
-\p 
-\p 
-\p 
-\p 
-\p 
-\p 
+\p ok. 
+\p ok. 
+\p ok. 
+\p ok. 
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\subsubsection{Example URIs}
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\subsection{Describing Things with RDF}
+\p ok.
+\p ok.
+\subsubsection{Literal Triples and Outgoing Links}
+\p ok.
+\p ok.
+\p rdfs:label, foaf:name, skos:prefLabel, dcterms:title. dcterms:description, rdfs:comment.
+\subsubsection{Incoming Links}
+\p ok.
+\p ok. \VV{Achado motivacao/critério para declarar propriedades inversas: os recursos envolvidos "ganham" a aresta no sentido contrario}
+\p ok. foaf:primaryTopic, foaf:isPrimaryTopicOf
+\p ok.
+\subsubsection{Triples that Describe Related Resources}
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\subsubsection{Triples that Describe the Description}
+\p ok.
+\subsection{Publishing Data about Data}
+\subsubsection{Describing a Data Set}
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok. Semantic Sitemaps
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok. voiD
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\subsubsection{Provenance Metadata}
+\p ok.
+\p ok. Dublin Core.
+\p ok.
+\p ok. NG4J.
+\subsubsection{Licenses, Waivers and Norms for Data}
+\p ok.
+\p ok.
+\p ok.
+\p Licenses vc. Waivers ok.
+\p ok.
+\p ok.
+\p ok.
+\p Applying Licenses o Copyrightable Material ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p Non-copyrightable Material ok.
+\p ok.
+\p ok.
+\p ok.
+\subsection{Choosing and Using Vocabularies to Describe Data}
+\p ok.
+\subsubsection{SKOS, RDFS and OWL}
+\p ok.
+\p ok. RDFS++
+\p ok. Semantic Web for the Working Ontologist
+\subsubsection{RDFS Basics}
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p Annotations in RDFS ok.
+\p ok. \VV{rdfs:label e rdfs:comment sao recomendados para todos os recursos.}
+\p Relating Classes and Properties. ok.
+\p ok.
+\subsubsection{A Little OWL}
+\p equivalent
+\p inverseFunctionalProperty
+\p inverseOf
+\subsubsection{Reusing Existing Terms}
+\p ok.
+\p ok. SIOC, Good Relations Ontology, BIBO, OAI, Review Vocabulary
+\p ok.
+\p ok.
+\subsubsection{Selecting Vocabularies}
+\p ok.
+\p ok.
+\subsubsection{Defining Terms}
+\p ok. \VV{Melhor definir de forma meio solta do que sobrecarregar com axiomas de onologia}
+\p Neologism, Protege, NeOn.
+\subsection{Making Links with RDF}
+\subsubsection{Making Links within a Data Set}
+\p ok.
+\p Publishing Incoming and Outgoing Links ok.
+\p ok.
+\subsubsection{Making links with External Data Sources}
+\p ok.
+\p ok.
+\p ok. Fazendo triplas conectando de Triplestores externas para o BD. Entregar estas triplas para as comunidades das triples tores externas.
+\p Choosing External Linking Targets ok.
+\p ok.
+\p ok.
+\p Choosing Predicates for Linking ok.
+\p ok.
+\p ok.
+\subsubsection{Settiong RDF Links Manually}
+\p ok.
+\p ok.
+\p ok. Sindice e Falcon para achar URIs.
+\p ok.
+\subsubsection{Auto-generating RDF Links}
+\p ok.
+\p ok.
+\p Key-based Approaches ok.
+\p ok.
+\p Similarity-based Approaches ok
+\p ok.
+\p ok.
+\p ok. Silk, LIMES
+\p ok. MiMOM, idMash, ObjectCoref
+\p ok.
+\section{Recipes for Publishing Linked Data}
+\p ok.
+\subsection{Linked Data Publishing Patterns}
+\p ok.
+\p ok.
+Figura 5.1: \VV{Pubby.}
+\subsubsection{Patterns in a Nutshell}
+\p ok.
+\p From Queryable Structured Data to Linked Data ok. RDF Wrappers. ok.
+\p ok.
+\p From Static Structured Daya to Linked Data. \VV{Lista de conversores:} \url{http://www.w3.org/wiki/ConverterToRdf#SQL} e havia uma no \url{http://simile.mit.edu/wiki/RDFizers}.
+\p \VV{Linked Data Interface} de uma triplestore adequada ou \VV{Web server} ``clássico''.
+\p From Text Documents to Linked Data. ok.
+\subsubsection{Additional Considerations}
+\p ok.
+\p Data Volume: How much data need to be served? ok. \VV{Considerada opção do arquivo rdf de texto estático}.
+\p \VV{Sugerido de quebrar o rdf textual em arquivos de texto para cada entidade, evitando operacoes com arquivos muito grandes}.
+\p Data Dynamism: how often does data change? ok.
+\p ok.
+\subsection{The Recipes}
+\p ok.
+\subsubsection{Serving Linked Data as Static RDF/XML Files}
+\p ok.
+\p \VV{Reforcada prioridade p rdf/xml, deixando turtle e outras como complementares}.
+\p Hosting and Naming Static RDF Files. ok.
+\p ok.
+\p Server-Side Configuration: MIME Types. ok.
+\p ok. \VV{AddType application/rdf+xml .rdf} no \VV{httpd.conf} ou \VV{.htaccess}. 
+\p ok.
+\p ok. \VV{AddType text/n3;charset=utf-8 .n3} e \VV{AddType text/turtle;charset=utf-8 .ttl}.
+\p  Making RDF Discoverable from HTML. ok.
+\p  ok.
+\p  ok. \VV{Autodiscovery do RDF com: <link rel="alternate" type="application/rdf+xml" href="company.rdf">}.
+\subsubsection{Serving Linked Data as RDF Embedded in HTML Files}
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok. RDFa Distiller and Parser \url{http://www.w3.org/2007/08/pyRdfa/}
+\p ok.
+\subsubsection{Serving RDF and HTML with Custom Server-Side Scripts}
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\subsubsection{Serving Linked Data from Relational Databases}
+\p ok. Confirmando o que fizemos no participa: mantem estrutura original e apresenta versao linkada.
+\p ok.
+\p ok.
+\p ok. \VV{D2R} p o que faz o ontop.
+\p ok.
+\p ok.
+\subsubsection{Serving Linked Data from RDF Triple Stores}
+\p ok.
+\p ok. \VV{Pubby para uma interface de dados linkados atraves do endpoint sparql}
+\p \VV{Pubby conf:loadRDF} para carregar o rdf estatico.
+\p  \VV{ARC} pra inteface semantica, Sparql e +++.
+\subsubsection{Serving linked Data by Wrapping Existing Application or Web APIs}
+\p ok. Programmable Web.
+\p ok.
+\p ok.
+\subsection{Additional Approaches to Publishing Linked Data}
+\p ok. Derreferenciamento, HTML/RDFa, Dump rdf+xml ou ttl, sparql endpoint.
+\subsection{Testing and Debugging Linked Data}
+\p ok. \VV{Eyeball, Validator} \url{http://www.w3.org/RDF/Validator/}
+\p \VV{Vapour, RDF:Alerts, Sindice Inspector}!!!!
+\p ok. \url{http://richard.cyganiak.de/blog/2007/02/debugging-semantic-web-sites-with-curl/} cURL
+\p ok.  LiveHTTPHeaders and ModifyHeaders Firefox
+\p ok. linked data browsers
+\p ok. Tabulator \url{http://www.w3.org/2005/ajar/tab}
+\p ok. Marbles \url{http://dws.informatik.uni-mannheim.de/}
+\p ok. LOD Browser Switch \url{http://browse.semanticweb.org/}
+\p ok.
+\subsection{Linked Data Publishing Checklist}
+\p ok.  voID
+\p ok. LOD Cloud document \url{http://lod-cloud.net/state/}.
+\section{Consuming Linked Data}
+\p ok. Padronização e abertura.
+\p ok.
+\subsection{Deployed Linked Data Applications}
+\p ok.
+\p ok.
+\subsubsection{Generic Applications}
+\p search, browse.
+\p  Linked Data Browsers. ok.
+\p ok.
+\p ok. Dico hyperdata \url{http://wifo5-03.informatik.uni-mannheim.de/bizer/ng4j/disco/} Tabulator,  Marbles
+\p ok. LinkSailor com visualizacoes;
+\p ok. LOD Browser Switch
+\p Linked Data Search Engines. ok. Crowlers que abrem p busca depois.
+\p Sig.ma, Falcons, SWSE. 
+\p Ok. \VV{Levantar ao menos uma search engine para nos}
+\p Sig.ma e possibilidades de escolha das fontes.
+\p ok. VisiNav e buscas semanticas complexas.
+\p Buscas para aplicacoes: Sindice (instancias), Swoogle e Watson (ontologias).
+\p ok.
+\p Repositório central Uberblic.
+\p ok. RDFa e Google.
+\p ok.
+\subsubsection{Domain-specific Applications}
+\p ok.
+\p ok.
+\p Paggr e Dayta.me para agregacao de conteudo da web e para enriquecimento de info sobre o calendario da pessoa, respectivamente.
+\p Talis Aspire.
+\p DbPedia modile e o enriquecimento do grafo global pelos usuarios.
+\p Diseasome e NCBO Resource Index.
+\p Researcher Map achando perfis FOAF.
+\p Faviki e tags com base no grafo global.
+\p Shortipedia e Semantic MediaWiki.
+\subsection{Developing a Linked Data Mashup}
+\p ok.
+\p ok.
+\p ok.
+\subsubsection{Software Requirements}
+\p LDspider para crawl. Jena TDB de triplestore.
+\p ok.
+\subsubsection{Accessing Linked Data URIs}
+\p ok. Derefenciar e raspar.
+\p ok. COmando p ldspider crowl e mandar p endpoint
+\p ok.
+\p ok. Não ficou claro como o -b restringe a profundidade da busca.
+\subsubsection{Representing Data Locally susing Named Graphs}
+\p ok. Finalmente named graphs, graph set
+\p ok.
+\p ok.
+\p ok. Legal exemplo de graph names.
+\subsection{Querying Local Data with SPARQL}
+\p \VV{SPARQL Recommendation} \url{http://www.w3.org/TR/rdf-sparql-query/}
+\p ok.
+\p ok.
+\p ok. Exemplo excelente com named graphs. \VV{Pensar em named graphs para as triplificacoes e para as estruturas auxiliares (BoWs e redes).}
+\p ok.
+\p ok.
+\subsection{Architecture of Linked Data Applications}
+\p ok.
+\p ok. observar \VV{Indicacoes do padrao ``busca federada''} que é o que estamos usando. Tentar disponiblizar outras arquiteturas.
+\p ok.
+\p ok. então: \VV{busca federada para cada instancia participativa, crowlers para apresentar estes dados relacionados a outros}. Garantido jah o crowler do LOD. Idealmente também o derreferenciamento.
+\p como assim \VV{search the Web for mappings}??? sameAs + heuristica para identity.
+\p ok.
+\subsubsection{Accessing the Web of Data}
+\p Crowlers, LD Client Libraries, Tabulator AJAR. sameAs.org.
+\p ok. Billion Triples Challenge (BTC) Dataset
+\subsubsection{Vocabulary Mapping}
+\p ok.
+\p ok. SPARQL++, R2R, RIF.
+\p ok.
+\p ok.
+\subsubsection{Identity Resolution}
+\p ok.
+\p ok. Silk Server.
+\subsubsection{Provenance Tracking}
+\p ok.
+\subsubsection{Data Quality Assessment}
+\p É parte necessário em crowls maiores um modulo para limpar e remover rdf spam.
+\p ok.
+\p ok. Rank, filter com WIQA framework, fuse com DERI Pipes e o KnoFuss.
+\p ok. Metodos para aferir qualidade \url{http://sourceforge.net/projects/trdf/}
+\p ok.
+\p ok.
+\subsubsection{Cachung Web Data Locally}
+\p ok. 1 biblhao de triplas por maquina. Berlin SPARQL Benchmark.
+\p ok. MapReduce, Hadoop.
+\subsubsection{Using Web Data in the Application Context}
+\p \url{http://www.w3.org/2001/sw/wiki/GephiSemanticWebImportPlugin}, \url{http://www.w3.org/2001/sw/wiki/Javascript}, \url{http://www.w3.org/2001/sw/wiki/Python}
+\p \VV{Information Workbrench} \url{http://iwb.fluidops.com/resource/dbpedia:Animal}
+\subsection{Effort Distribution between Publishers, Consumers and Third Parties}
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok. dataspace.
+\p ok. Web de dados como uma construcao social.
+\p ok.
+\section{Summary and Outlook}
+\p ``concerned about future-proofing their assets.''.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
+\p
 \chapter{The Principles of LiquidFeedback (2014)}
 \PP 5
 \mysection{0}{Foreword}
