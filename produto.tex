@@ -3983,22 +3983,141 @@ Figura 5.1: \VV{Pubby.}
 \p ok.
 \p ok.
 \p ok.
-\p
-\p
-\p
-\p
-\p
-\p
-\p
-\p
-\p
-\p
-\p
-\p
-\p
-\p
-\p
-\p
+\chapter{SKOS Simple Knowledge Organization System Primer}
+\url{http://www.w3.org/TR/skos-primer/}
+
+SKOS—Simple Knowledge Organization System—provides a model for expressing the basic structure and content of concept schemes such as thesauri, classification schemes, subject heading lists, taxonomies, folksonomies, and other similar types of controlled vocabulary. As an application of the Resource Description Framework (RDF), SKOS allows concepts to be composed and published on the World Wide Web, linked with data on the Web and integrated into other concept schemes.
+
+This document is a user guide for those who would like to represent their concept scheme using SKOS.
+
+In basic SKOS, conceptual resources (concepts) are identified with URIs, labeled with strings in one or more natural languages, documented with various types of note, semantically related to each other in informal hierarchies and association networks, and aggregated into concept schemes.
+
+In advanced SKOS, conceptual resources can be mapped across concept schemes and grouped into labeled or ordered collections. Relationships can be specified between concept labels. Finally, the SKOS vocabulary itself can be extended to suit the needs of particular communities of practice or combined with other modeling vocabularies.
+
+This document is a companion to the SKOS Reference, which provides the normative reference on SKOS.
+
+\section{Introduction}
+\p ok.
+\p ok.
+\p ok.
+\subsection{About this Primer}
+\p ok.
+\p ok. SKOS-UCR.
+\p ok.
+\p ok.
+\p About Examples in this Primer. ok.
+\p ok.
+\p ok.
+\section{SKOS Essentals}
+\p ok.
+\p ok. Estranho ainda informal hierarchies e curioso sobre os ``concept schemes''.
+\subsection{Concepts}
+\p ok.
+\p ok. \VV{Recipes} \url{http://www.w3.org/TR/swbp-vocab-pub/#recipe5aA} com PURL.
+\subsection{Labels}
+\p ok.
+\p ok.
+\subsubsection{Preferred Lexical Labels}
+\p ok.
+\p ok.
+\p ok. Um prefLabel por lingua, max.
+\p ok. Recomenda-se n usar o mesmo prefLabel para 2 conceitos diferentes, embora o modelo SKOS não imponha isso.
+\subsubsection{Alternative Lexical Labels}
+\p ok.
+\p ok. \VV{synonyms, Near-synonyms, abbreviations and acronyms}
+\p ok.
+\p ok.
+\subsubsection{Hidden Lexical Labels}
+\p ok. \VV{Usar hiddenLabel para as escritas com grafia e acentuação errada}.
+\subsection{Semantic Relationships}
+\p ok. broader e narrower
+\p ok. related
+\subsubsection{Broader/Narrower Relationships}
+\p ok.
+\p ok.
+\p muito interessante: \VV{skos: broader e narrower nao sao transitivas pois sao usados esquemas em que nao sao transitivos}
+\p Em geral, a literatura aponta de vocabulários aponta que relacoes hierarquivas sao irreflexivas. Porém: rdfs:subClassOf é reflexiva.
+\p ok.
+\subsubsection{Associative Relationships}
+\p ok.
+\p skos:related é simétrica mas não transitiva.
+\p associacao (related) e cadeia de hierarquia (broader, narrower) sao excludentes. Ou seja, se A related B, nao pode haver cadeia narrower ou broader entre A e B.
+\subsection{Documentary Notes}
+\p ok.
+\p note, scopeNote, definition, example, historyNote. \VV{Incluir no historyNote se o conceito consta na constituição de 88 e no decreto PNPS}.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\subsection{Concept Schemes}
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\section{Networking Knowledge Organization Systems on he Semantic Web}
+\p ok.
+\subsection{Mapping Concept Schemes}
+\p ok.
+\p ok. Conceptual mappings.
+\p exactMatch, closeMatch, broadMatch, narrowMatch, relatedMatch.
+\p ok.
+\p ok.
+\p ok.
+\p ok. exactMatch eh transitivo e closeMatch não.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\subsection{Re-using and Extending Concept Schemes}
+\p uma URI pode estar em mais de um vocabulario.
+\p ok.
+\p ok.
+\p ok.
+\p ok. importancia do derreferencialmento.
+\p ok.
+\p ok.
+\p ok. imports e OWL full.
+\p ok.
+\subsection{Subject Indexing and SKOS}
+\p ok.
+\p ok.
+\p ok. skos concept como objeto de uma relacao dct:subject
+\section{Advances SKOS: When KOSs are not Simple Anymore}
+\p ok.
+\p ok.
+\p ok.
+\subsection{Collections of Concepts}
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\subsection{Advanced Documentation Features}
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\subsection{Relationships between Labels}
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\p ok.
+\subsection{Coordinating Concepts}
 \p
 \p
 \p
